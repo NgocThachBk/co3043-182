@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment"
+    android:background="@color/cardview_light_background"
+
+    >
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/cardview_light_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/cardview_light_background">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PhuotGuide"
+                    android:textSize="23dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageButton
+                    android:id="@+id/search_frag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search_white_24dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_alignParentRight="true"
+                    android:foregroundGravity="center"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_width="70dp"
+                            android:layout_weight="1"
+                            android:layout_height="80dp"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            card_view:cardCornerRadius="5dp"
+                            android:elevation="2dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/positon6"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="10dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lịch Trình"
+                                    android:textAlignment="center"/>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_width="70dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            card_view:cardCornerRadius="5dp"
+                            android:elevation="2dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_hotel_black_24dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="10dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Khách Sạn"
+                                    android:textAlignment="center"/>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_width="70dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            card_view:cardCornerRadius="5dp"
+                            android:elevation="2dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_airplanemode_active_black_24dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="10dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Chuyến Bay"
+                                    android:textAlignment="center"/>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="30dp">
+
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_width="70dp"
+                            android:layout_weight="1"
+                            android:layout_height="80dp"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            card_view:cardCornerRadius="5dp"
+                            android:elevation="2dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_restaurant_black_24dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="10dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nhà Hàng"
+                                    android:textAlignment="center"/>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_width="70dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            card_view:cardCornerRadius="5dp"
+                            android:elevation="2dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_airport_shuttle_black_24dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="10dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tham Quan"
+                                    android:textAlignment="center"/>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_width="70dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            card_view:cardCornerRadius="5dp"
+                            android:elevation="2dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_class_black_24dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="10dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vé và Tour"
+                                    android:textAlignment="center"/>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Điểm đến phổ biến"
+                        android:textSize="22dp"
+                        android:textColor="@color/colorTextBlack"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view_search"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/cardview_light_background"
+                        card_view:cardElevation="0dp"
+                        android:layout_marginBottom="30dp"
+                        >
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rclPopular"
+                            android:scrollbars="horizontal"
+                            card_view:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:overScrollMode="never"
+                            />
+
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tháng 5 đi đâu?"
+                        android:id="@+id/idTitleMonth"
+                        android:textSize="22dp"
+                        android:textColor="@color/colorTextBlack"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view_place_month"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/cardview_light_background"
+                        card_view:cardElevation="0dp"
+                        >
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rclPlaceMonth"
+                            android:scrollbars="horizontal"
+                            card_view:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:overScrollMode="never"
+                            />
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+
+</FrameLayout>

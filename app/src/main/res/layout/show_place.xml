@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_search_black_24dp"
+            android:background="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/edInput"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Nhập Địa Điểm Cần Tìm"
+            android:layout_weight="6"
+            android:paddingLeft="5dp"
+            android:textColor="@color/cardview_light_background"
+            android:background="@color/colorPrimary"
+            android:text=""/>
+
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_main"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvContacts_main"
+            android:scrollbars="vertical"
+            card_view:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

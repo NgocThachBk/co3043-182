@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bgBottomNavigation">#fe485a</color>
+    <color name = "colorTextBlack">#000000</color>
+    <color name = "colorClock">#F73265</color>
+    <color name = "colorText">#3D5BE7</color>
+    <color name = "tabColor">#093FEB</color>
+    <color name = "backgroundTab">#FFFFFF</color>
+    <color name = "textGray">#B8B6B6</color>
+    <color name="less_grey">#d0d0d0</color>
+</resources>
